@@ -14,7 +14,7 @@ RAW_INPUT_FILE_SINGLE_INPUT = 'THE PATH OF THE INPUT FILE'
 
 def create_hyper_params_model_1():
     '''
-    Example function to create a HyperParams object containing your hyperparameter configurations incluing
+    Example function to create a HyperParams object containing your hyperparameter configurations including
         * Type of your neural network, see RnnCellType for more details
         * Number of the model inputs
         * Number of time steps
@@ -29,7 +29,6 @@ def create_hyper_params_model_1():
                         of each epoch to generate a graph, the purpose of this is to generate 'snapshots' of the model
                         performance to help you visually check the progress of the training
     '''
-    #TODO cell_type should be moved to layer definition
     cell_type = RnnCellType.GRU_BIDI
     num_inputs = 2
     num_time_steps = 30
