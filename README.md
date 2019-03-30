@@ -1,5 +1,5 @@
 # Tensorlab
-Tensorlab is a very versatile and flexible deep learning tool which helps you very quickly setup experiments for time series data modelling and prediction, using Keras(with Tensorflow backend)
+Tensorlab is a very versatile and flexible deep learning tool which can you very quickly setup experiments for time series data modelling and prediction, using Keras(with Tensorflow backend), it might be you next favorite toy once you get it working:)
 
 This tool requires basic understanding of the following concepts and frameworks
 * Deep learning architeturs
@@ -49,5 +49,5 @@ Every time you start a new experiment, the ID in the model_id file will be autom
 * Use **Anaconda** to setup your development environment, it will make your development and model training life much easier
 * Use GPU for training when you train set gets large
 * Use external tool like **Tablaeu** to visualize model learning progress based on the data in **model_fit_<model_id>.csv**, another approach for visualization is to add callback in _Utils.py_ to activate Tensowflow's **Tensorboard**
-* Feel free to customize the code for your needs! It could be your next favorate toy once it starts working:) The code should be a good baseline for your further development, if you have any question or tensorlab helped you, I'm happy to hear!
+* Feel free to customize the code for your needs! The code should be a good baseline for your further development, if you have any question or tensorlab helped you, I'm happy to hear!
 
