@@ -1,7 +1,18 @@
 # Tensorlab
-Tensorlab is a very versatile and flexible deep learning tool which can you very quickly setup experiments for time series data modelling and prediction, using Keras(with Tensorflow backend), it might be you next favorite toy once you get it working:)
+Tensorlab is a very versatile and flexible deep learning tool which can help you very quickly setup/execute/resume experiments for time series data modelling and prediction, using Keras(with Tensorflow back-end).
 
+Some highlights of Tensorlab:
+* Automatic folder creation for new experiment/model
+* Support resume and prediction
+* Automatic 'snapshots' generation for visual training progress monitoring
+* Automatic logging file generation to track all your experiment executions
+* Objected oriented code which is very easy to understand and customize
+
+Feel free to fork/customize the code for your needs! it might be you next favorite toy once you get it working:) The code should be a good baseline for your further development, if you have any question or tensorlab helped you, I'm happy to hear!
+
+# Requirements
 This tool requires basic understanding of the following concepts and frameworks
+* Data preparation for machine learning
 * Deep learning architeturs
    * Time series modelling
    * Hyperparameter tuning
@@ -11,7 +22,7 @@ This tool requires basic understanding of the following concepts and frameworks
    * skearn
    * matplotlib.pyplot
 * Tensorflow
-* Keras
+* Keras API
 
 ## Starting your first experiment!
 See example code in LabRunner.py to start your time series data modeling in less than 5 minutes!
@@ -30,7 +41,7 @@ Every time you start a new experiment, the ID in the model_id file will be autom
 
 ## Resuming your existing experiment
 1. **Choose the model** - Double check current model ID in **model_id** file, update as necessary to point it to a specific model with which you want to resume training
-2. **Choose the checkpoint** - Under the target model training folder which is identified by the model ID you selected in previous step, retrieve the latest checkpoing ID(usually the latest checkpoint has the best performance, feel free to use different checkpoint as necessary) in sub-folder checkpoints
+2. **Choose the checkpoint** - Under the target model training folder which is identified by the model ID you selected in previous step, retrieve the latest checkpoint ID(usually the latest checkpoint has the best performance, feel free to use different checkpoint as necessary) in sub-folder checkpoints
 3. Update following parameters in **LabRunner.py**
    * Set *is_resume* to *True*
    * Set *checkpoint_id* and *initial_epoch* of the target model's **HyperParams** object to the latest checkpoint ID
@@ -38,7 +49,7 @@ Every time you start a new experiment, the ID in the model_id file will be autom
    
 ## Making prediction
 1. **Choose the model** -Double check current model ID in **model_id** file, update as necessary to point it to a specific model which you want to use to make prediction
-2. **Choose the checkpoint** - Under the target model training folder which is identified by the model ID you selected in previous step, retrieve the latest checkpoing ID(usually the latest checkpoint has the best performance, feel free to use different checkpoint as necessary) in sub-folder checkpoints
+2. **Choose the checkpoint** - Under the target model training folder which is identified by the model ID you selected in previous step, retrieve the latest checkpoint ID(usually the latest checkpoint has the best performance, feel free to use different checkpoint as necessary) in sub-folder checkpoints
 3. Update following parameters in **LabRunner.py**
    * Set *is_resume* to *False*
    * Set *checkpoint_id* and *initial_epoch* of the target model's **HyperParams** object to the latest checkpoint ID
@@ -49,5 +60,4 @@ Every time you start a new experiment, the ID in the model_id file will be autom
 * Use **Anaconda** to setup your development environment, it will make your development and model training life much easier
 * Use GPU for training when you train set gets large
 * Use external tool like **Tablaeu** to visualize model learning progress based on the data in **model_fit_<model_id>.csv**, another approach for visualization is to add callback in _Utils.py_ to activate Tensowflow's **Tensorboard**
-* Feel free to customize the code for your needs! The code should be a good baseline for your further development, if you have any question or tensorlab helped you, I'm happy to hear!
 
