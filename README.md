@@ -1,5 +1,5 @@
 # Tensorlab
-Tensorlab is a very versatile and flexible deep learning tool which can help you very quickly setup/execute/resume experiments for time series data modelling and prediction, using Keras(with Tensorflow back-end).
+Tensorlab is a very versatile and flexible deep learning tool which can help you very quickly setup/execute/resume experiments for time series data modelling, using Keras(with Tensorflow back-end).
 
 Some highlights of Tensorlab:
 * Automatic folder creation for new experiment/model
