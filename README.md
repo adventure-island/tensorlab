@@ -65,5 +65,5 @@ Every time you start a new experiment, the ID in the model_id file will be autom
 ## Tips
 * Use **Anaconda** to setup your development environment, it will make your development and model training life much easier
 * Use GPU for training when you train set gets large
-* Use external tool like **Tablaeu** to visualize model learning progress based on the data in **model_fit_<model_id>.csv**, another approach for visualization is to add callback in _Utils.py_ to activate Tensowflow's **Tensorboard**, see commented code in **Utils.py**
+* Use external tool like **Tablaeu** to visualize model learning progress based on the data in **model_fit_<model_id>.csv**, another approach for visualization is to add callback in **Utils.py** to activate Tensowflow's **Tensorboard**, see commented code in **Utils.py**
 
