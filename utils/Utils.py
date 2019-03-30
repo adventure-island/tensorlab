@@ -1,7 +1,7 @@
 '''
 Created on March 30, 2019
 
-@author: JJ
+@author: JJ Sun
 '''
 
 import os
