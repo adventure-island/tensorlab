@@ -3,10 +3,16 @@ Tensorlab is a very versatile and flexible deep learning tool which can help you
 
 Some highlights of Tensorlab:
 * Automatic folder creation for new experiment/model
+   * Individual folder is automatically created for different model
+   * Model folder name is automatically managed (based on a integer stored in a text file called **model_id**)
+   * Under each model/experiment folder
+      * **checkpoints** folder is automatically created to store training checkpoints
+      * **snapshots** folder is automatically created to store predction graphs for visual monitoring of the progress of model performance
+* Automatically scales, splits, builds, and reshapes your raw input data into the data that is ready for training!
 * Support resume and prediction
 * Automatic 'snapshots' generation for visual training progress monitoring
 * Automatic logging file generation to track all your experiment executions
-* Objected oriented code which is very easy to understand and customize
+* Object-oriented code which is very easy to understand and customize
 
 Feel free to fork/customize the code for your needs! it might be you next favorite toy once you get it working:) The code should be a good baseline for your further development, if you have any question or tensorlab helped you, I'm happy to hear!
 
