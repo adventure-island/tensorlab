@@ -27,9 +27,9 @@ This tool requires basic understanding of the following concepts and frameworks
 ## Starting your first experiment!
 See example code in LabRunner.py to start your time series data modeling in less than 5 minutes!
 
-Point the value of __MODLE_FOLDER__ in _Utils.py_ to a location where you want to keep all the experiment output, that folder will be used as the root fold to store all your experiment output. Once you start a new experiment, the following folder structure will be automatically created:
+Point the value of __MODLE_FOLDER__ in **Utils.py** to a location where you want to keep all your experiment execution output, that folder will be used as the root fold for all your experiment executions. Once you start a new experiment, the following folder structure will be automatically created:
 ```bash
-+-- <MODLE_FOLDER>
++-- <MODLE_FOLDER> - The root folder for all your experiments, MUST be manually created before you start any experiment execution
    | +-- 'model_id' - A simple text file containing the model/experiment ID, starting from 1
    | +-- <model_id> - The folder containing the training output of the experiment identified by the value of <model_id>
            | +-- checkpoints - The folder containing the model checkpoint files generated during the training
@@ -37,7 +37,7 @@ Point the value of __MODLE_FOLDER__ in _Utils.py_ to a location where you want t
            | +-- model_fit_<model_id>.csv - The log file containing the model performance data generated after each epoch
            | +-- training_<model_id>_<timestamp>.log - The log file containing the details of the training process
 ```           
-Every time you start a new experiment, the ID in the model_id file will be automatically increased, and a new folder under with this new ID as its name will created, all training output will stored in this folder
+Every time you start a new experiment, the ID in the model_id file will be automatically increased, and a new folder with this new ID as its name will created, all training output will be stored in this folder
 
 ## Resuming your existing experiment
 1. **Choose the model** - Double check current model ID in **model_id** file, update as necessary to point it to a specific model with which you want to resume training
