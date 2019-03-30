@@ -28,7 +28,7 @@ This tool requires basic understanding of the following concepts and frameworks
 See example code in LabRunner.py to start your time series data modeling in less than 5 minutes!
 
 Point the value of __MODLE_FOLDER__ in **Utils.py** to a location where you want to keep all your experiment execution output, that folder will be used as the root fold for all your experiment executions. Once you start a new experiment, the following folder structure will be automatically created:
-```bash
+```
 +-- <MODLE_FOLDER> - The root folder for all your experiments, MUST be manually created before you start any experiment execution
    | +-- 'model_id' - A simple text file containing the model/experiment ID, starting from 1
    | +-- <model_id> - The folder containing the training output of the experiment identified by the value of <model_id>
