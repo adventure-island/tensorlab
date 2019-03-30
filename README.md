@@ -7,9 +7,9 @@ Some highlights of Tensorlab:
    * Model folder name is automatically managed (based on a integer stored in a text file called **model_id**)
    * Under each model/experiment folder
       * **checkpoints** folder is automatically created to store training checkpoints
-      * **snapshots** folder is automatically created to store predction graphs for visual monitoring of the progress of model performance
+      * **snapshots** folder is automatically created to store prediction graphs for visual monitoring of the progress of model performance
 * Automatically scales, splits, builds, and reshapes your raw input data into the data that is ready for training!
-* Support resume and prediction
+* Supports resume mode and prediction
 * Automatic 'snapshots' generation for visual training progress monitoring
 * Automatic logging file generation to track all your experiment executions
 * Object-oriented code which is very easy to understand and customize
@@ -65,5 +65,5 @@ Every time you start a new experiment, the ID in the model_id file will be autom
 ## Tips
 * Use **Anaconda** to setup your development environment, it will make your development and model training life much easier
 * Use GPU for training when you train set gets large
-* Use external tool like **Tablaeu** to visualize model learning progress based on the data in **model_fit_<model_id>.csv**, another approach for visualization is to add callback in _Utils.py_ to activate Tensowflow's **Tensorboard**
+* Use external tool like **Tablaeu** to visualize model learning progress based on the data in **model_fit_<model_id>.csv**, another approach for visualization is to add callback in _Utils.py_ to activate Tensowflow's **Tensorboard**, see commented code in **Utils.py**
 
