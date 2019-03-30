@@ -26,7 +26,6 @@ import keras
 import numpy
 import math
 from keras.layers.wrappers import Bidirectional
-from jinja2.runtime import to_string
 
 logging.getLogger('tensorflow').disabled = True
 
