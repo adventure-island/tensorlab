@@ -1,4 +1,4 @@
-# Tensorlab - A Versatile Python Tool for RNN Modeling Using Keras
+# Tensorlab - A Versatile Python Tool for RNN Modeling Experiments Using Keras
 Tensorlab is a very versatile and flexible deep learning tool which can help data scientist and deep learning engineer very quickly setup/execute/resume experiments for time series data modeling, using Keras(with Tensorflow back-end).
 
 <img src="screenshot-tensorlab-training.png" alt="screenshot-tensorlab-training" width="600"/>
@@ -68,5 +68,5 @@ Every time you start a new experiment, the ID in the model_id file will be autom
 * Use **Anaconda** to setup your development environment, it will make your development and model training life much easier
 * Use GPU for training when you train set gets large
 * Use external tool like **Tablaeu** to visualize model learning progress based on the data in **model_fit_<model_id>.csv**, another approach for visualization is to add callback in [Utils.py](https://github.com/adventure-island/tensorlab/blob/master/utils/Utils.py) to activate Tensowflow's **Tensorboard**, see commented code in [Utils.py](https://github.com/adventure-island/tensorlab/blob/master/utils/Utils.py)
-* Interested in invoking Amazon SageMaker DeepAR endpoint using Java and visualizing the response in real time? see [Spring Boot Template for Amazon SageMaker DeepAR Endpoint Integration](https://github.com/adventure-island/springboot-deepar-template)
+* Interested in invoking Amazon SageMaker DeepAR endpoint using Java and visualizing the response in real time? see **[Spring Boot Template for Amazon SageMaker DeepAR Endpoint Integration](https://github.com/adventure-island/springboot-deepar-template)**
 
