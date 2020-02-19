@@ -1,4 +1,4 @@
-# Tensorlab - A Versatile Python Tool for RNN Modeling Experiments Using Keras
+# Tensorlab - A Versatile Python Tool for RNN Modelling Experiments Using Keras
 Tensorlab is a very versatile and flexible deep learning tool which can help data scientist and deep learning engineer very quickly setup/execute/resume experiments for time series data modeling, using Keras(with Tensorflow back-end).
 
 <img src="screenshot-tensorlab-training.png" alt="screenshot-tensorlab-training" width="600"/>
